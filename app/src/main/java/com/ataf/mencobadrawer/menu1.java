@@ -24,6 +24,7 @@ public class menu1 extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
+        ((MainActivity)getActivity()).setTitleBar("menu 1");
         View root = inflater.inflate(R.layout.menu1_fragment,container,false);
         final TextView tv = root.findViewById(R.id.text_home);
         return root;
